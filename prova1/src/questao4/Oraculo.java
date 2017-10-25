@@ -5,10 +5,12 @@
  */
 package questao4;
 
+import java.util.Calendar;
+
 /**
  *
  * @author arthu
  */
 public class Oraculo {
-    
+    private Calendar fimMundo;
 }
