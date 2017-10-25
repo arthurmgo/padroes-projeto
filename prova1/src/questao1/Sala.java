@@ -1,13 +1,16 @@
 package questao1;
 
-public class Sala {
+public class Sala extends Comodo{
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+    private String tipoPiso;
+   
+    
+	public String getTipoPiso() {
+		return tipoPiso;
 	}
+	public void setTipoPiso(String tipoPiso) {
+		this.tipoPiso = tipoPiso;
+	}
+    
 
 }
