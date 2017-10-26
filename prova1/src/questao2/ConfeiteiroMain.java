@@ -12,6 +12,7 @@ package questao2;
 public class ConfeiteiroMain {
     
     public static void main(String[] args) {
+        
         ConfeiteiroDoce cd = new ConfeiteiroDoce();
         ConfeiteiroSalgado cs = new ConfeiteiroSalgado();
         
@@ -30,7 +31,14 @@ public class ConfeiteiroMain {
         
         
         Churros c = cd.novoFrito();
+        c.setCobertura("Brigadeiro");
+        c.setTipoRecheio("Doce de Leite");
         
+        
+        System.out.println(e);
+        System.out.println(p);
+        System.out.println(t);
+        System.out.println(c);
         
         
         

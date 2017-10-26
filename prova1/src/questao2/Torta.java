@@ -11,6 +11,15 @@ public class Torta extends Assado implements Doce {
 	public void setTampa(boolean tampa) {
 		this.tampa = tampa;
 	}	
+        
+        
+        public String toString() {
+        if( isTampa()){
+            return "Torta com tampa e recheio de " + getTipoRecheio();
+        }else{
+            return "Torta sem tampa e recheio de " + getTipoRecheio();
+        }
+    }
 	
 
 }

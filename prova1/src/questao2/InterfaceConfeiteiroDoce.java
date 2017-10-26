@@ -8,6 +8,8 @@ package questao2;
 /**
  *
  * @author arthu
+ * @param <F>
+ * @param <A>
  */
 public interface InterfaceConfeiteiroDoce <F extends Frito & Doce, A extends Assado & Doce> extends Confeiteiro<F, A> {
     
