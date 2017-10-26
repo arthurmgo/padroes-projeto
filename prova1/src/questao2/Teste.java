@@ -9,7 +9,7 @@ package questao2;
  *
  * @author arthu
  */
-public class ConfeiteiroMain {
+public class Teste {
     
     public static void main(String[] args) {
         
