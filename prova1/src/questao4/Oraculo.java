@@ -13,4 +13,5 @@ import java.util.Calendar;
  */
 public class Oraculo {
     private Calendar fimMundo;
+    
 }
