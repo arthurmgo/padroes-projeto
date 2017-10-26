@@ -19,7 +19,7 @@ public class Bombom extends Produto{
 	}
     
 	public String toString(){
-		return "quantidadedeChocolate: "+ quantidadeChocolate + "\n"+"TipoRecheio: "+tipoRecheio+"\n"+
+		return "Bombom\n"+"quantidadedeChocolate: "+ quantidadeChocolate + "\n"+"TipoRecheio: "+tipoRecheio+"\n"+
 	"precoDeVenda: "+super.getPrecoDeVenda();
 		
 	}

@@ -14,7 +14,7 @@ public class Biscoito extends Produto{
 	
 	
 	public String toString(){
-		return "tipoAroma: "+tipoAroma+"\n"+
+		return "Biscoito\n"+"tipoAroma: "+tipoAroma+"\n"+
 	"precoDeVenda: "+super.getPrecoDeVenda();
 		
 	}
