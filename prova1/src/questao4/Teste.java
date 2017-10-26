@@ -15,25 +15,47 @@ import java.util.GregorianCalendar;
 public class Teste {
     
     
-    
     public static void main(String[] args) {
         
         // Gera um objeto o1
         Oraculo o1 = Oraculo.getInstance();
         System.out.println(o1.getFimMundo().getTime());
+        if(o1.getHojeChove()){
+            System.out.println("Vai Chover Hoje");
+        }else{
+            System.out.println("Nao Vai Chover Hoje");
+        }
             
         //Gera um objeto o2
         Oraculo o2 = Oraculo.getInstance();
         System.out.println(o2.getFimMundo().getTime());
+        if(o2.getHojeChove()){
+            System.out.println("Vai Chover Hoje");
+        }else{
+            System.out.println("Nao Vai Chover Hoje");
+        }
+        
         
         //Modifica a data apenas da instancia o2
         Calendar hoje = new GregorianCalendar(2017, Calendar.OCTOBER,27);
         o2.setFimMundo(hoje);
+        o2.setHojeChove(false);
         
         
         //Imprime a Data para cada uma das instancias
         System.out.println(o1.getFimMundo().getTime());
+        if(o1.getHojeChove()){
+            System.out.println("Vai Chover Hoje");
+        }else{
+            System.out.println("Nao Vai Chover Hoje");
+        }
         System.out.println(o2.getFimMundo().getTime());
+        if(o2.getHojeChove()){
+            System.out.println("Vai Chover Hoje");
+        }else{
+            System.out.println("Nao Vai Chover Hoje");
+        }
+        
         
     }
     
