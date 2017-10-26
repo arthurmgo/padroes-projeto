@@ -1,6 +1,6 @@
 package questao2;
 
-public abstract class Frito {
+public abstract class Frito extends ProdutoComRecheio{
 
 
 }
