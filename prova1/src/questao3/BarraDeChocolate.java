@@ -19,7 +19,7 @@ public class BarraDeChocolate extends Produto {
 		
 	
 	public String toString(){
-		return "tamanho: "+ tamanho +"\n"+"ingredienteAdicional: "+ingredienteAdicional+"\n"+
+		return "Barra de chocolate\n"+"tamanho: "+ tamanho +"\n"+"ingredienteAdicional: "+ingredienteAdicional+"\n"+
 	"precoDeVenda: "+super.getPrecoDeVenda();
 		
 	}

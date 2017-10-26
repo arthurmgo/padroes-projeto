@@ -7,9 +7,9 @@ public class Teste {
 		
 		//cria algumas Fabricas
 		GulaChocolates gula = new GulaChocolates();
-		gula.fabricas.add(new ConcreteFabricaBaBom()); //Fabrica apenas Barra e Bombom
-		gula.fabricas.add(new ConcreteFabricaBisBo());  //Fabrica apenas Biscoito e Bolacha
-		gula.fabricas.add(new ConcreteFabricaBomBis());  //Fabrica apenas Bombom e Biscoito
+		gula.fabricas.add(ConcreteFabricaBaBom.getInstancia()); //Fabrica apenas Barra e Bombom
+		gula.fabricas.add(ConcreteFabricaBisBo.getInstancia());  //Fabrica apenas Biscoito e Bolacha
+		gula.fabricas.add(ConcreteFabricaBomBis.getInstancia());  //Fabrica apenas Bombom e Biscoito
 			
 
 		//Fabrica 1

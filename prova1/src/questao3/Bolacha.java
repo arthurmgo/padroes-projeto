@@ -18,7 +18,7 @@ public class Bolacha extends Produto{
 	}
 	
 	public String toString(){
-		return "tipoMassa: "+tipoMassa+"\n"+"tipoRecheio: "+tipoRecheio+"\n"+
+		return "Bolacha\n"+"tipoMassa: "+tipoMassa+"\n"+"tipoRecheio: "+tipoRecheio+"\n"+
 	"precoDeVenda: "+super.getPrecoDeVenda();
 		
 	}
