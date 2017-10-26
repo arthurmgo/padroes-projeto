@@ -13,9 +13,11 @@ public class Teste {
     
     public static void main(String[] args) {
         
+        // Utiliza Singleton para criar as Fabricas
         ConfeiteiroDoce cd = ConfeiteiroDoce.getInstance();
         ConfeiteiroSalgado cs =  ConfeiteiroSalgado.getInstance();
         
+        // Cria o produtos de cada fabrica e define alguns valores
         Esfirra e = cs.novoAssado();
         e.setAberta(true);
         e.setTipoRecheio("Carne");
@@ -34,6 +36,8 @@ public class Teste {
         c.setCobertura("Brigadeiro");
         c.setTipoRecheio("Doce de Leite");
         
+        
+        // Imprime os produtos criados 
         
         System.out.println(e);
         System.out.println(p);
