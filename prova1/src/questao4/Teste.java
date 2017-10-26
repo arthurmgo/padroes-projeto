@@ -7,7 +7,6 @@ package questao4;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-import java.util.Locale;
 
 /**
  *
@@ -19,16 +18,22 @@ public class Teste {
     
     public static void main(String[] args) {
         
-        Locale locale = Locale.getDefault();
-        
+        // Gera um objeto o1
         Oraculo o1 = Oraculo.getInstance();
-        System.out.println(o1.getFimMundo().getDisplayName(Calendar.DATE, Calendar.LONG, locale));
-        
-        Calendar hoje = new GregorianCalendar(26, 10, 2017);
+        System.out.println(o1.getFimMundo().getTime());
+            
+        //Gera um objeto o2
         Oraculo o2 = Oraculo.getInstance();
+        System.out.println(o2.getFimMundo().getTime());
+        
+        //Modifica a data apenas da instancia o2
+        Calendar hoje = new GregorianCalendar(2017, Calendar.OCTOBER,27);
         o2.setFimMundo(hoje);
         
-        System.out.println(o2.getFimMundo());
+        
+        //Imprime a Data para cada uma das instancias
+        System.out.println(o1.getFimMundo().getTime());
+        System.out.println(o2.getFimMundo().getTime());
         
     }
     

@@ -15,8 +15,8 @@ import java.util.GregorianCalendar;
 public class Oraculo {
     
     private static Oraculo instance;
-    private Calendar fimMundo;
-    private Boolean hojeChove;
+    private Calendar fimMundo = new GregorianCalendar(2012, Calendar.DECEMBER, 22);
+    private Boolean hojeChove = true;
     
     public static Oraculo getInstance(){
         if(instance == null){
@@ -26,8 +26,6 @@ public class Oraculo {
     }
     
     private Oraculo(){
-        this.fimMundo = new GregorianCalendar(22, 12, 2012);
-        this.hojeChove = true;
     }
 
     public Calendar getFimMundo() {

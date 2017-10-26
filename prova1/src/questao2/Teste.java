@@ -13,8 +13,8 @@ public class Teste {
     
     public static void main(String[] args) {
         
-        ConfeiteiroDoce cd = new ConfeiteiroDoce();
-        ConfeiteiroSalgado cs = new ConfeiteiroSalgado();
+        ConfeiteiroDoce cd = ConfeiteiroDoce.getInstance();
+        ConfeiteiroSalgado cs =  ConfeiteiroSalgado.getInstance();
         
         Esfirra e = cs.novoAssado();
         e.setAberta(true);

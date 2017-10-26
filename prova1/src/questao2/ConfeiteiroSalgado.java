@@ -11,6 +11,15 @@ package questao2;
  */
 public class ConfeiteiroSalgado implements InterfaceConfeiteiroSalgado<Pastel, Esfirra>{
 
+    private static ConfeiteiroSalgado instance;
+    
+    public static ConfeiteiroSalgado getInstance(){
+        if(instance == null){
+            instance = new ConfeiteiroSalgado();
+        }
+        return instance;
+    }
+    
     @Override
     public Pastel novoFrito() {
         return new Pastel();

@@ -11,6 +11,15 @@ package questao2;
  */
 public class ConfeiteiroDoce implements InterfaceConfeiteiroDoce<Churros, Torta> {
 
+    private static ConfeiteiroDoce instance;
+    
+    public static ConfeiteiroDoce getInstance(){
+        if(instance == null){
+            instance = new ConfeiteiroDoce();
+        }
+        return instance;
+    }
+    
     @Override
     public Torta novoAssado() {
         return new Torta();
