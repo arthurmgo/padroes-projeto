@@ -1,6 +1,6 @@
 package questao1;
 
-public class Banheiro {
+public class Banheiro extends Comodo{
 
 	private boolean bide;
 	
